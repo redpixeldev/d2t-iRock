@@ -1,0 +1,26 @@
+{
+	"name": "astro-tailwindcss-starter",
+	"type": "module",
+	"version": "0.0.1",
+	"license": "MIT",
+	"scripts": {
+		"develop": "astro dev",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^5.1.0",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.13",
+		"alpinejs": "^3.14.1",
+		"astro": "^4.11.1",
+		"prettier": "^3.3.2",
+		"prettier-plugin-astro": "^0.14.0",
+		"prettier-plugin-tailwindcss": "^0.6.5",
+		"tailwindcss": "^3.4.4"
+	}
+}
