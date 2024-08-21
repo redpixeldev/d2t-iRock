@@ -7,6 +7,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			body: ['Raleway', 'sans-serif'],
+			header: ['obviously', 'sans-serif'],
 		},
 
 		container: {
