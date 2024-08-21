@@ -6,7 +6,7 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
 	theme: {
 		fontFamily: {
-			body: ['', 'sans-serif'],
+			body: ['Raleway', 'sans-serif'],
 		},
 
 		container: {
@@ -17,7 +17,10 @@ module.exports = {
 		extend: {
 			colors: {
 				brand: {
-					primary: '',
+					primary: '#0074eb',
+					"dark-blue": '#112863',
+					"light-blue": '#cde3fb',
+
 				},
 			},
 			spacing: {
