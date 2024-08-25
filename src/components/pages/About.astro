@@ -2,638 +2,641 @@
 
 ---
 
-<div class='relative'>
-	<img
-		src='/img/bg-about-hero.png'
-		class='absolute inset-x-0 top-0 h-[450px] w-full object-cover object-top sm:h-[550px] md:h-[850px]'
-		alt=''
-	/>
-	<div class='container h-[400px] sm:h-[550px] md:h-[850px]'>
-		<div
-			class='relative h-full w-[400px] pt-32 sm:w-[450px] md:w-[500px] lg:pb-48 xl:w-[550px] 2xl:w-[650px] 2xl:pt-36'>
-			<img
-				src='/img/icon-cloud.png'
-				class='absolute -bottom-28 -left-20 top-auto z-10 lg:bottom-auto lg:left-0 lg:top-40 xl:top-36 2xl:top-32'
-				alt=''
-			/>
-			<span
-				class='relative z-10 flex h-full items-end pb-5 pl-2 font-header text-5xl font-bold text-brand-primary sm:pb-8 md:pb-10 md:pl-10 lg:items-center lg:justify-center lg:pb-36 lg:pl-0 xl:text-6xl 2xl:pb-32 2xl:text-7xl'
-				>About us</span
-			>
-		</div>
-	</div>
-</div>
-<div class='relative bg-white'>
-	<img
-		src='/img/bg-services.png'
-		class='absolute inset-x-0 bottom-0 hidden h-[1050px] w-full object-cover object-top md:block md:h-[950px] lg:h-[1250px] xl:h-[1480px]'
-		alt=''
-	/>
-	<img
-		src='/img/bg-services-mobile.png'
-		class='absolute inset-x-0 bottom-0 block h-[1020px] w-full object-cover object-top sm:h-[1050px] md:hidden md:h-[950px] lg:h-[1250px] xl:h-[1480px]'
-		alt=''
-	/>
-	<div class='container relative z-10 pb-24 pr-0 pt-36 sm:pr-4 lg:pb-32 lg:pt-16 2xl:px-28 2xl:pb-40'>
-		<div class='pb-16 pr-4 lg:pb-24'>
-			<h3 class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] sm:pb-10 xl:text-5xl'>Our Story</h3>
-			<p class='pb-3 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'>
-				iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
-				power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
-				lessons boost confidence, encourage teamwork and give children the chance to perform skills they've learned in
-				for their teachers, guardians and peers.
-			</p>
-			<div>
-				<div
-					class='border-b-4 border-brand-primary/30'
-					x-data={`{ isOpen: false }`}>
-					<button
-						type='button'
-						class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-						@click='isOpen = !isOpen'>
-						<div
-							class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-							:class='{ "!text-brand-primary": isOpen }'>
-							Misunderstood and overlooked
-						</div>
-						<div
-							class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-							:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-							<svg
-								class='mt-1 rotate-90'
-								width='14'
-								height='23'
-								viewBox='0 0 14 23'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'>
-								<path
-									d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-									fill='white'
-								></path>
-							</svg>
-						</div>
-					</button>
-					<p
-						class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-						x-show='isOpen'
-						x-cloak
-						x-collapse>
-						iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
-						power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
-						lessons boost confidence.
-					</p>
-				</div>
-				<div
-					class='border-b-4 border-brand-primary/30'
-					x-data={`{ isOpen: false }`}>
-					<button
-						type='button'
-						class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-						@click='isOpen = !isOpen'>
-						<div
-							class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-							:class='{ "!text-brand-primary": isOpen }'>
-							Boosting confidence and changing perceptions
-						</div>
-						<div
-							class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-							:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-							<svg
-								class='mt-1 rotate-90'
-								width='14'
-								height='23'
-								viewBox='0 0 14 23'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'>
-								<path
-									d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-									fill='white'
-								></path>
-							</svg>
-						</div>
-					</button>
-					<p
-						class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-						x-show='isOpen'
-						x-cloak
-						x-collapse>
-						iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
-						power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
-						lessons boost confidence.
-					</p>
-				</div>
-				<div
-					class='border-b-4 border-brand-primary/30'
-					x-data={`{ isOpen: false }`}>
-					<button
-						type='button'
-						class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-						@click='isOpen = !isOpen'>
-						<div
-							class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-							:class='{ "!text-brand-primary": isOpen }'>
-							When business meets musical expression
-						</div>
-						<div
-							class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-							:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-							<svg
-								class='mt-1 rotate-90'
-								width='14'
-								height='23'
-								viewBox='0 0 14 23'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'>
-								<path
-									d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-									fill='white'
-								></path>
-							</svg>
-						</div>
-					</button>
-					<p
-						class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-						x-show='isOpen'
-						x-cloak
-						x-collapse>
-						iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
-						power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
-						lessons boost confidence.
-					</p>
-				</div>
-			</div>
-		</div>
+<div class='relative overflow-hidden'>
+	<div class='relative'>
 		<img
-			src='/img/our-story-image.png'
-			class='w-full rounded-3xl'
+			src='/img/bg-about-hero.png'
+			class='absolute inset-x-0 top-0 h-[450px] w-full object-cover object-top sm:h-[550px] md:h-[850px]'
 			alt=''
 		/>
-		<div class='relative'>
-			<div class='pt-36 sm:pt-44 md:pt-16 lg:pt-24 2xl:pt-32'>
-				<div class='pr-4 text-center'>
-					<h3 class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] text-brand-primary xl:text-5xl'>
-						The iRock difference
-					</h3>
-					<p class='font-medium lg:pb-3 lg:text-lg/[30px] xl:text-xl/[35px]'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc felis, ultrices at tortor posuere,
-						ullamcorper aliquam diam. Pellentesque aliquam felis quis ligula porta, a vehicula eros maximus. Aenean
-						iaculis tristique ante et porttitor.
-					</p>
-				</div>
-				<div
-					class='relative mb-10 flex items-center gap-6 overflow-auto pl-20 pr-10 pt-8 sm:ml-0 sm:justify-center lg:pb-14'>
+		<div class='container h-[400px] sm:h-[550px] md:h-[850px]'>
+			<div
+				class='relative h-full w-[400px] pt-32 sm:w-[450px] md:w-[500px] lg:pb-48 xl:w-[550px] 2xl:w-[650px] 2xl:pt-36'>
+				<img
+					src='/img/icon-cloud.png'
+					class='absolute -bottom-28 -left-20 top-auto z-10 lg:bottom-auto lg:left-0 lg:top-40 xl:top-36 2xl:top-32'
+					alt=''
+				/>
+				<span
+					class='relative z-10 flex h-full items-end pb-5 pl-2 font-header text-5xl font-bold text-brand-primary sm:pb-8 md:pb-10 md:pl-10 lg:items-center lg:justify-center lg:pb-36 lg:pl-0 xl:text-6xl 2xl:pb-32 2xl:text-7xl'
+					>About us</span
+				>
+			</div>
+		</div>
+	</div>
+	<div class='relative bg-white'>
+		<img
+			src='/img/bg-services.png'
+			class='absolute inset-x-0 bottom-0 hidden h-[1050px] w-full object-cover object-top md:block md:h-[950px] lg:h-[1250px] xl:h-[1480px]'
+			alt=''
+		/>
+		<img
+			src='/img/bg-services-mobile.png'
+			class='absolute inset-x-0 bottom-0 block h-[1020px] w-full object-cover object-top sm:h-[1050px] md:hidden md:h-[950px] lg:h-[1250px] xl:h-[1480px]'
+			alt=''
+		/>
+		<div class='container relative z-10 pb-24 pr-0 pt-36 sm:pr-4 lg:pb-32 lg:pt-16 2xl:px-28 2xl:pb-40'>
+			<div class='pb-16 pr-4 lg:pb-24'>
+				<h3 class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] sm:pb-10 xl:text-5xl'>Our Story</h3>
+				<p class='pb-3 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'>
+					iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
+					power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
+					lessons boost confidence, encourage teamwork and give children the chance to perform skills they've learned in
+					for their teachers, guardians and peers.
+				</p>
+				<div>
 					<div
-						class='shrink-0 rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
-						Enrol Now
+						class='border-b-4 border-brand-primary/30'
+						x-data={`{ isOpen: false }`}>
+						<button
+							type='button'
+							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+							@click='isOpen = !isOpen'>
+							<div
+								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+								:class='{ "!text-brand-primary": isOpen }'>
+								Misunderstood and overlooked
+							</div>
+							<div
+								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+								<svg
+									class='mt-1 rotate-90'
+									width='14'
+									height='23'
+									viewBox='0 0 14 23'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'>
+									<path
+										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+										fill='white'
+									></path>
+								</svg>
+							</div>
+						</button>
+						<p
+							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+							x-show='isOpen'
+							x-cloak
+							x-collapse>
+							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
+							band lessons boost confidence.
+						</p>
 					</div>
 					<div
-						class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
-						Our Coaches
+						class='border-b-4 border-brand-primary/30'
+						x-data={`{ isOpen: false }`}>
+						<button
+							type='button'
+							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+							@click='isOpen = !isOpen'>
+							<div
+								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+								:class='{ "!text-brand-primary": isOpen }'>
+								Boosting confidence and changing perceptions
+							</div>
+							<div
+								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+								<svg
+									class='mt-1 rotate-90'
+									width='14'
+									height='23'
+									viewBox='0 0 14 23'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'>
+									<path
+										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+										fill='white'
+									></path>
+								</svg>
+							</div>
+						</button>
+						<p
+							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+							x-show='isOpen'
+							x-cloak
+							x-collapse>
+							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
+							band lessons boost confidence.
+						</p>
 					</div>
 					<div
-						class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
-						Our Lessons
-					</div>
-				</div>
-				<div class='flex flex-col items-center gap-6 pr-4 md:flex-row xl:gap-10'>
-					<img
-						src='/img/our-service-image.png'
-						class='md:w-1/2'
-						alt=''
-					/>
-					<div class='md:w-1/2'>
-						<h4 class='pb-5 font-header text-3xl font-bold xl:text-4xl'>Our service</h4>
-						<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
-							Once established in a primary school, parents pay a monthly subscription service that includes at least 33
-							sessions per academic year, including three show-stopping performances at the end-of-term.
+						class='border-b-4 border-brand-primary/30'
+						x-data={`{ isOpen: false }`}>
+						<button
+							type='button'
+							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+							@click='isOpen = !isOpen'>
+							<div
+								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+								:class='{ "!text-brand-primary": isOpen }'>
+								When business meets musical expression
+							</div>
+							<div
+								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+								<svg
+									class='mt-1 rotate-90'
+									width='14'
+									height='23'
+									viewBox='0 0 14 23'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'>
+									<path
+										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+										fill='white'
+									></path>
+								</svg>
+							</div>
+						</button>
+						<p
+							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+							x-show='isOpen'
+							x-cloak
+							x-collapse>
+							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
+							band lessons boost confidence.
 						</p>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<div class='bg-white'>
-	<div class='container pb-28 pt-20 sm:pb-32 lg:py-24 2xl:px-28'>
-		<div class='hidden divide-brand-light-blue md:flex lg:divide-x-4'>
-			<div class='w-full px-4 lg:w-1/3 xl:px-10'>
-				<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-					><span
-						class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-						>Hundreds</span
-					> of UK primary schools
-				</span>
-				<img
-					src='/img/icon-bag.png'
-					class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-					alt=''
-				/>
-			</div>
-			<div class='hidden px-4 lg:block lg:w-1/3 xl:px-10'>
-				<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-					><span
-						class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-						>Thousands
-					</span> of iRockers
-				</span>
-				<img
-					src='/img/icon-rockers.png'
-					class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-					alt=''
-				/>
-			</div>
-			<div class='hidden px-4 lg:block lg:w-1/3 xl:px-10'>
-				<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-					><span
-						class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-						>99%
-					</span> children achieve exam-free qualification
-				</span>
-				<img
-					src='/img/icon-achievement.png'
-					class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-					alt=''
-				/>
-			</div>
-		</div>
-		<div class='md:hidden'>
-			<section
-				class='splide stats-slider'
-				x-data={`
-					{
-						init() {
-							new Splide('.splide', {
-								type: 'slide',
-								perPage: 1,
-								perMove: 1,
-								gap: 0,
-								pagination: true,
-								arrows: false,
-							}).mount();
-						}
-					}
-				`}>
-				<div class='splide__track'>
-					<ul class='splide__list'>
-						<li class='splide__slide'>
-							<div class='w-full px-4'>
-								<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-									><span
-										class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-										>Hundreds</span
-									> of UK primary schools
-								</span>
-								<img
-									src='/img/icon-bag.png'
-									class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-									alt=''
-								/>
-							</div>
-						</li>
-						<li class='splide__slide'>
-							<div class='w-full px-4'>
-								<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-									><span
-										class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-										>Thousands
-									</span> of iRockers
-								</span>
-								<img
-									src='/img/icon-rockers.png'
-									class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-									alt=''
-								/>
-							</div>
-						</li>
-						<li class='splide__slide'>
-							<div class='w-full px-4'>
-								<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
-									><span
-										class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
-										>99%
-									</span> children achieve exam-free qualification
-								</span>
-								<img
-									src='/img/icon-achievement.png'
-									class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
-									alt=''
-								/>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</div>
-</div>
-<div class='relative'>
-	<img
-		src='/img/bg-instrument.png'
-		class='absolute -top-7 hidden h-[900px] w-full object-fill md:block lg:h-[665px] xl:h-[740px] 2xl:top-0 2xl:h-[750px]'
-		alt=''
-	/>
-	<img
-		src='/img/bg-instrument-mobile.png'
-		class='absolute -top-7 block h-[720px] w-full object-fill sm:h-[800px] md:hidden 2xl:top-0'
-		alt=''
-	/>
-	<div class='container relative z-10 pb-16 pt-12 sm:pb-20 sm:pt-20 md:pb-24 md:pt-36 2xl:px-28'>
-		<div class='xl:w-4/5 2xl:w-[70%]'>
-			<h3
-				class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] text-white sm:pb-10 xl:pb-12 xl:text-5xl 2xl:pb-14'>
-				Choosing an Instrument
-			</h3>
-			<p class='pb-8 font-medium text-white sm:pb-12 lg:text-lg/[30px] xl:text-xl/[35px]'>
-				iRock bands have between three and nine members and each are made up from combinations of Electric Guitars,
-				Drums, Keyboards and Vocals.
-			</p>
-		</div>
-		<div class='mx-auto grid grid-cols-2 gap-5 md:w-3/4 md:gap-10 lg:mx-0 lg:w-full lg:grid-cols-4 lg:gap-4 xl:gap-16'>
-			<div>
-				<img
-					src='/img/ellipse-guitar.png'
-					class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
-					alt=''
-				/>
-			</div>
-			<div>
-				<img
-					src='/img/ellipse-vocals.png'
-					class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
-					alt=''
-				/>
-			</div>
-			<div>
-				<img
-					src='/img/ellipse-drums.png'
-					class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
-					alt=''
-				/>
-			</div>
-			<div>
-				<img
-					src='/img/ellipse-keys.png'
-					class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
-					alt=''
-				/>
-			</div>
-		</div>
-	</div>
-</div>
-<div class='bg-white'>
-	<div class='container pb-16 pr-0 pt-12 md:pb-24 md:pt-16 lg:pb-20 lg:pr-4 lg:pt-20 xl:pt-28 2xl:px-28 2xl:pt-32'>
-		<div class='mr-4 flex flex-col gap-7 pb-10 md:flex-row md:gap-10 md:pb-12 lg:gap-14 xl:gap-24 xl:pb-16'>
-			<div class='md:w-[45%]'>
-				<h3 class='font-header text-3xl font-bold xl:text-4xl'>
-					In-school band lessons that are fun, creative and affordable
-				</h3>
-			</div>
-			<div class='md:w-[55%]'>
-				<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
-					Our weekly 30-minute band sessions happen within the school day. We look after everything and even supply all
-					of the instruments. It could not be easier. Band members are grouped by similar ages and year groups. Band
-					sizes are capped at nine to ensure everyone receives the very best learning experience. We create an
-					environment where every child can flourish.
-				</p>
-			</div>
-		</div>
-		<!-- slider mobile -->
-		<div class='relative mr-4 overflow-auto lg:mr-0'>
-			<div class='flex gap-3 sm:gap-4 xl:gap-6'>
-				<div
-					class='w-3/4 shrink-0 rounded-3xl border-2 border-[#19d78c] px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
-					<img
-						src='/img/icon-face.png'
-						class='mx-auto h-16 xl:h-20'
-						alt=''
-					/>
-					<span class='block pt-4 text-xl font-bold xl:pt-6'>Ages</span>
-					<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-[#19d78c] xl:mt-5'></span>
-					<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
-						Reception - Year 6
-						<br />
-						(Depending on the school)
-					</span>
-				</div>
-				<div
-					class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-primary px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
-					<img
-						src='/img/icon-calendar.png'
-						class='mx-auto h-16 xl:h-20'
-						alt=''
-					/>
-					<span class='block pt-4 text-xl font-bold xl:pt-6'>Dates</span>
-					<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-primary xl:mt-5'></span>
-					<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
-						Sep. 01 - Jul. 31
-						<br />
-						Depending on school holidays)
-					</span>
-				</div>
-				<div
-					class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-electric-pink px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
-					<img
-						src='/img/icon-schedule.png'
-						class='mx-auto h-16 xl:h-20'
-						alt=''
-					/>
-					<span class='block pt-4 text-xl font-bold xl:pt-6'>Schedule</span>
-					<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-electric-pink xl:mt-5'></span>
-					<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
-						Monday - Friday
-						<br />
-						(Once a week, during lessons)
-					</span>
-				</div>
-				<div
-					class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-dark-blue px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
-					<img
-						src='/img/icon-people.png'
-						class='mx-auto h-16 xl:h-20'
-						alt=''
-					/>
-					<span class='block pt-4 text-xl font-bold xl:pt-6'>Band sizes</span>
-					<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-dark-blue xl:mt-5'></span>
-					<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
-						Up to 9 students per band
-						<br />
-						(All similar year groups)
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class='relative'>
-	<img
-		src='/img/bg-benefits.png'
-		class='absolute inset-x-0 -bottom-16 z-20 hidden h-[800px] w-full object-fill md:block md:h-[600px] lg:h-[730px] xl:h-[800px]'
-		alt=''
-	/>
-	<img
-		src='/img/bg-benefits-mobile.png'
-		class='absolute inset-x-0 -bottom-16 z-20 block h-[800px] w-full object-fill md:hidden md:h-[600px] lg:h-[730px] xl:h-[800px]'
-		alt=''
-	/>
-	<div class='container relative z-30 pb-3 md:pb-8 lg:pb-16 2xl:px-28'>
-		<div class='flex flex-col items-center gap-10 md:flex-row lg:gap-16'>
 			<img
-				src='img/benefit-image.png'
-				class='sm:w-3/5 md:w-[45%] lg:w-1/2'
+				src='/img/our-story-image.png'
+				class='w-full rounded-3xl'
 				alt=''
 			/>
-			<div class='md:w-[55%] lg:w-1/2 lg:pt-14 xl:pt-24'>
-				<h3 class='pb-9 font-header text-3xl font-bold text-white xl:text-4xl'>How children benefit from iRock</h3>
-				<ul class='grid gap-3 pb-6 lg:pb-8 xl:grid-cols-2 xl:gap-5'>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Gives confidence</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Creates new friendships</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Boosts wellbeing</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Supports teamwork</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Improves memory</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Develops social skills</span>
-					</li>
-					<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
-						<img
-							src='/img/icon-checkmark.png'
-							class='h-7 xl:mt-1'
-							alt=''
-						/>
-						<span>Develops academic progress</span>
-					</li>
-				</ul>
-				<a
-					href='/'
-					class='inline-block rounded-full bg-brand-electric-pink px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:px-10 lg:py-4'>
-					Enrol now
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-<div class='relative'>
-	<img
-		src='/img/bg-get-in-touch.png'
-		class='absolute inset-x-0 top-0 z-10 hidden h-[1150px] w-full object-fill md:block lg:h-[800px] 2xl:h-[850px]'
-		alt=''
-	/>
-	<img
-		src='/img/bg-get-in-touch-mobile.png'
-		class='absolute inset-x-0 -top-[300px] z-10 block h-[1250px] w-full object-fill object-bottom sm:h-[1150px] md:hidden'
-		alt=''
-	/>
-	<div class='container relative z-20 pb-20 pt-28 lg:pb-40 lg:pt-40 2xl:px-28'>
-		<img
-			src='/img/icon-microphone.png'
-			class='absolute right-0 top-7 hidden lg:block 2xl:right-6 2xl:top-16'
-			alt=''
-		/>
-		<div class='text-center'>
-			<h3 class='pb-4 font-header text-4xl font-bold -tracking-[0.015px] text-brand-primary xl:pb-10 xl:text-5xl'>
-				Get in touch
-			</h3>
-			<p class='text-xl font-medium'>Drop us a message and one of our friendly team will be in touch</p>
-		</div>
-		<form class='relative z-10 flex flex-col gap-3 pt-9 lg:flex-row lg:gap-6 xl:pt-6'>
-			<div class='space-y-3 lg:w-1/2 lg:space-y-6'>
-				<div>
-					<span class='pb-3 text-sm font-bold'>Are you a Teacher/Parent or Guardian?*</span>
-					<div class='flex flex-col gap-3 pt-3 sm:flex-row sm:gap-5'>
-						<div>
-							<input
-								type='radio'
-								id='teacher'
-								name='teacher'
-								class='peer hidden'
-							/>
-							<label
-								for='teacher'
-								class='inline-block cursor-pointer rounded-full border border-brand-light-blue bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-primary transition-colors duration-150 ease-linear hover:border-brand-primary hover:bg-brand-light-blue hover:text-brand-primary peer-checked:border-white peer-checked:bg-brand-primary peer-checked:text-white'>
-								teacher
-							</label>
+			<div class='relative'>
+				<div class='pt-36 sm:pt-44 md:pt-16 lg:pt-24 2xl:pt-32'>
+					<div class='pr-4 text-center'>
+						<h3 class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] text-brand-primary xl:text-5xl'>
+							The iRock difference
+						</h3>
+						<p class='font-medium lg:pb-3 lg:text-lg/[30px] xl:text-xl/[35px]'>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc felis, ultrices at tortor posuere,
+							ullamcorper aliquam diam. Pellentesque aliquam felis quis ligula porta, a vehicula eros maximus. Aenean
+							iaculis tristique ante et porttitor.
+						</p>
+					</div>
+					<div
+						class='relative mb-10 flex items-center gap-6 overflow-auto pl-20 pr-10 pt-8 sm:ml-0 sm:justify-center lg:pb-14'>
+						<div
+							class='shrink-0 rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+							Enrol Now
 						</div>
-						<div>
-							<input
-								type='radio'
-								id='parent'
-								name='parent'
-								class='peer hidden'
-							/>
-							<label
-								for='parent'
-								class='inline-block cursor-pointer rounded-full border border-brand-light-blue bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-primary transition-colors duration-150 ease-linear hover:border-brand-primary hover:bg-brand-light-blue hover:text-brand-primary peer-checked:border-white peer-checked:bg-brand-primary peer-checked:text-white'>
-								Parent or Guardian
-							</label>
+						<div
+							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+							Our Coaches
+						</div>
+						<div
+							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+							Our Lessons
+						</div>
+					</div>
+					<div class='flex flex-col items-center gap-6 pr-4 md:flex-row xl:gap-10'>
+						<img
+							src='/img/our-service-image.png'
+							class='md:w-1/2'
+							alt=''
+						/>
+						<div class='md:w-1/2'>
+							<h4 class='pb-5 font-header text-3xl font-bold xl:text-4xl'>Our service</h4>
+							<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
+								Once established in a primary school, parents pay a monthly subscription service that includes at least
+								33 sessions per academic year, including three show-stopping performances at the end-of-term.
+							</p>
 						</div>
 					</div>
 				</div>
-				<input
-					type='text'
-					name='name'
-					id='name'
-					placeholder='Name'
-					class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				/>
-				<input
-					type='email'
-					name='Email'
-					id='email'
-					placeholder='Email'
-					class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				/>
 			</div>
-			<div class='lg:w-1/2 lg:pt-8'>
-				<textarea
-					name='message'
-					id='message'
-					placeholder='Message'
-					class='block h-56 w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				></textarea>
-				<button
-					class='mt-6 inline-block rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:py-4'>
-					Send Message
-				</button>
+		</div>
+	</div>
+	<div class='bg-white'>
+		<div class='container pb-28 pt-20 sm:pb-32 lg:py-24 2xl:px-28'>
+			<div class='hidden divide-brand-light-blue md:flex lg:divide-x-4'>
+				<div class='w-full px-4 lg:w-1/3 xl:px-10'>
+					<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+						><span
+							class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+							>Hundreds</span
+						> of UK primary schools
+					</span>
+					<img
+						src='/img/icon-bag.png'
+						class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+						alt=''
+					/>
+				</div>
+				<div class='hidden px-4 lg:block lg:w-1/3 xl:px-10'>
+					<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+						><span
+							class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+							>Thousands
+						</span> of iRockers
+					</span>
+					<img
+						src='/img/icon-rockers.png'
+						class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+						alt=''
+					/>
+				</div>
+				<div class='hidden px-4 lg:block lg:w-1/3 xl:px-10'>
+					<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+						><span
+							class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+							>99%
+						</span> children achieve exam-free qualification
+					</span>
+					<img
+						src='/img/icon-achievement.png'
+						class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+						alt=''
+					/>
+				</div>
 			</div>
-		</form>
+			<div
+				class='md:hidden'
+				x-data={`
+				{
+					init() {
+						new Splide('.stats-slider', {
+							type: 'slide',
+							perPage: 1,
+							perMove: 1,
+							gap: 0,
+							pagination: true,
+							arrows: false,
+						}).mount();
+					}
+				}
+			`}>
+				<section class='splide stats-slider'>
+					<div class='splide__track'>
+						<ul class='splide__list'>
+							<li class='splide__slide'>
+								<div class='w-full px-4'>
+									<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+										><span
+											class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+											>Hundreds</span
+										> of UK primary schools
+									</span>
+									<img
+										src='/img/icon-bag.png'
+										class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+										alt=''
+									/>
+								</div>
+							</li>
+							<li class='splide__slide'>
+								<div class='w-full px-4'>
+									<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+										><span
+											class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+											>Thousands
+										</span> of iRockers
+									</span>
+									<img
+										src='/img/icon-rockers.png'
+										class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+										alt=''
+									/>
+								</div>
+							</li>
+							<li class='splide__slide'>
+								<div class='w-full px-4'>
+									<span class='block pb-8 text-center text-2xl font-medium xl:text-3xl'
+										><span
+											class='block font-header text-4xl/[60px] font-bold -tracking-[0.015em] text-brand-primary xl:text-5xl/[70px]'
+											>99%
+										</span> children achieve exam-free qualification
+									</span>
+									<img
+										src='/img/icon-achievement.png'
+										class='mx-auto h-56 sm:h-52 xl:h-60 2xl:h-72'
+										alt=''
+									/>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img
+			src='/img/bg-instrument.png'
+			class='absolute -top-7 hidden h-[900px] w-full object-fill md:block lg:h-[665px] xl:h-[740px] 2xl:top-0 2xl:h-[750px]'
+			alt=''
+		/>
+		<img
+			src='/img/bg-instrument-mobile.png'
+			class='absolute -top-7 block h-[720px] w-full object-fill sm:h-[800px] md:hidden 2xl:top-0'
+			alt=''
+		/>
+		<div class='container relative z-10 pb-16 pt-12 sm:pb-20 sm:pt-20 md:pb-24 md:pt-36 2xl:px-28'>
+			<div class='xl:w-4/5 2xl:w-[70%]'>
+				<h3
+					class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] text-white sm:pb-10 xl:pb-12 xl:text-5xl 2xl:pb-14'>
+					Choosing an Instrument
+				</h3>
+				<p class='pb-8 font-medium text-white sm:pb-12 lg:text-lg/[30px] xl:text-xl/[35px]'>
+					iRock bands have between three and nine members and each are made up from combinations of Electric Guitars,
+					Drums, Keyboards and Vocals.
+				</p>
+			</div>
+			<div
+				class='mx-auto grid grid-cols-2 gap-5 md:w-3/4 md:gap-10 lg:mx-0 lg:w-full lg:grid-cols-4 lg:gap-4 xl:gap-16'>
+				<div>
+					<img
+						src='/img/ellipse-guitar.png'
+						class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
+						alt=''
+					/>
+				</div>
+				<div>
+					<img
+						src='/img/ellipse-vocals.png'
+						class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
+						alt=''
+					/>
+				</div>
+				<div>
+					<img
+						src='/img/ellipse-drums.png'
+						class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
+						alt=''
+					/>
+				</div>
+				<div>
+					<img
+						src='/img/ellipse-keys.png'
+						class='mx-auto h-40 sm:h-52 xl:h-64 2xl:h-72'
+						alt=''
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='bg-white'>
+		<div class='container pb-16 pr-0 pt-12 md:pb-24 md:pt-16 lg:pb-20 lg:pr-4 lg:pt-20 xl:pt-28 2xl:px-28 2xl:pt-32'>
+			<div class='mr-4 flex flex-col gap-7 pb-10 md:flex-row md:gap-10 md:pb-12 lg:gap-14 xl:gap-24 xl:pb-16'>
+				<div class='md:w-[45%]'>
+					<h3 class='font-header text-3xl font-bold xl:text-4xl'>
+						In-school band lessons that are fun, creative and affordable
+					</h3>
+				</div>
+				<div class='md:w-[55%]'>
+					<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
+						Our weekly 30-minute band sessions happen within the school day. We look after everything and even supply
+						all of the instruments. It could not be easier. Band members are grouped by similar ages and year groups.
+						Band sizes are capped at nine to ensure everyone receives the very best learning experience. We create an
+						environment where every child can flourish.
+					</p>
+				</div>
+			</div>
+			<!-- slider mobile -->
+			<div class='relative mr-4 overflow-auto lg:mr-0'>
+				<div class='flex gap-3 sm:gap-4 xl:gap-6'>
+					<div
+						class='w-3/4 shrink-0 rounded-3xl border-2 border-[#19d78c] px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
+						<img
+							src='/img/icon-face.png'
+							class='mx-auto h-16 xl:h-20'
+							alt=''
+						/>
+						<span class='block pt-4 text-xl font-bold xl:pt-6'>Ages</span>
+						<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-[#19d78c] xl:mt-5'></span>
+						<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
+							Reception - Year 6
+							<br />
+							(Depending on the school)
+						</span>
+					</div>
+					<div
+						class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-primary px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
+						<img
+							src='/img/icon-calendar.png'
+							class='mx-auto h-16 xl:h-20'
+							alt=''
+						/>
+						<span class='block pt-4 text-xl font-bold xl:pt-6'>Dates</span>
+						<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-primary xl:mt-5'></span>
+						<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
+							Sep. 01 - Jul. 31
+							<br />
+							Depending on school holidays)
+						</span>
+					</div>
+					<div
+						class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-electric-pink px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
+						<img
+							src='/img/icon-schedule.png'
+							class='mx-auto h-16 xl:h-20'
+							alt=''
+						/>
+						<span class='block pt-4 text-xl font-bold xl:pt-6'>Schedule</span>
+						<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-electric-pink xl:mt-5'></span>
+						<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
+							Monday - Friday
+							<br />
+							(Once a week, during lessons)
+						</span>
+					</div>
+					<div
+						class='w-3/4 shrink-0 rounded-3xl border-2 border-brand-dark-blue px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
+						<img
+							src='/img/icon-people.png'
+							class='mx-auto h-16 xl:h-20'
+							alt=''
+						/>
+						<span class='block pt-4 text-xl font-bold xl:pt-6'>Band sizes</span>
+						<span class='mx-auto mt-3.5 block h-1 w-10 rounded bg-brand-dark-blue xl:mt-5'></span>
+						<span class='block pt-3.5 text-sm font-bold xl:pt-5'>
+							Up to 9 students per band
+							<br />
+							(All similar year groups)
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img
+			src='/img/bg-benefits.png'
+			class='absolute inset-x-0 -bottom-16 z-20 hidden h-[800px] w-full object-fill md:block md:h-[600px] lg:h-[730px] xl:h-[800px]'
+			alt=''
+		/>
+		<img
+			src='/img/bg-benefits-mobile.png'
+			class='absolute inset-x-0 -bottom-16 z-20 block h-[800px] w-full object-fill md:hidden md:h-[600px] lg:h-[730px] xl:h-[800px]'
+			alt=''
+		/>
+		<div class='container relative z-30 pb-3 md:pb-8 lg:pb-16 2xl:px-28'>
+			<div class='flex flex-col items-center gap-10 md:flex-row lg:gap-16'>
+				<img
+					src='img/benefit-image.png'
+					class='sm:w-3/5 md:w-[45%] lg:w-1/2'
+					alt=''
+				/>
+				<div class='md:w-[55%] lg:w-1/2 lg:pt-14 xl:pt-24'>
+					<h3 class='pb-9 font-header text-3xl font-bold text-white xl:text-4xl'>How children benefit from iRock</h3>
+					<ul class='grid gap-3 pb-6 lg:pb-8 xl:grid-cols-2 xl:gap-5'>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Gives confidence</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Creates new friendships</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Boosts wellbeing</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Supports teamwork</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Improves memory</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Develops social skills</span>
+						</li>
+						<li class='flex gap-3 font-medium text-white xl:text-xl/[35px]'>
+							<img
+								src='/img/icon-checkmark.png'
+								class='h-7 xl:mt-1'
+								alt=''
+							/>
+							<span>Develops academic progress</span>
+						</li>
+					</ul>
+					<a
+						href='/'
+						class='inline-block rounded-full bg-brand-electric-pink px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:px-10 lg:py-4'>
+						Enrol now
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='relative'>
+		<img
+			src='/img/bg-get-in-touch.png'
+			class='absolute inset-x-0 top-0 z-10 hidden h-[1150px] w-full object-fill md:block lg:h-[800px] 2xl:h-[850px]'
+			alt=''
+		/>
+		<img
+			src='/img/bg-get-in-touch-mobile.png'
+			class='absolute inset-x-0 -top-[300px] z-10 block h-[1250px] w-full object-fill object-bottom sm:h-[1150px] md:hidden'
+			alt=''
+		/>
+		<div class='container relative z-20 pb-20 pt-28 lg:pb-40 lg:pt-40 2xl:px-28'>
+			<img
+				src='/img/icon-microphone.png'
+				class='absolute right-0 top-7 hidden lg:block 2xl:right-6 2xl:top-16'
+				alt=''
+			/>
+			<div class='text-center'>
+				<h3 class='pb-4 font-header text-4xl font-bold -tracking-[0.015px] text-brand-primary xl:pb-10 xl:text-5xl'>
+					Get in touch
+				</h3>
+				<p class='text-xl font-medium'>Drop us a message and one of our friendly team will be in touch</p>
+			</div>
+			<form class='relative z-10 flex flex-col gap-3 pt-9 lg:flex-row lg:gap-6 xl:pt-6'>
+				<div class='space-y-3 lg:w-1/2 lg:space-y-6'>
+					<div>
+						<span class='pb-3 text-sm font-bold'>Are you a Teacher/Parent or Guardian?*</span>
+						<div class='flex flex-col gap-3 pt-3 sm:flex-row sm:gap-5'>
+							<div>
+								<input
+									type='radio'
+									id='teacher'
+									name='teacher'
+									class='peer hidden'
+								/>
+								<label
+									for='teacher'
+									class='inline-block cursor-pointer rounded-full border border-brand-light-blue bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-primary transition-colors duration-150 ease-linear hover:border-brand-primary hover:bg-brand-light-blue hover:text-brand-primary peer-checked:border-white peer-checked:bg-brand-primary peer-checked:text-white'>
+									teacher
+								</label>
+							</div>
+							<div>
+								<input
+									type='radio'
+									id='parent'
+									name='parent'
+									class='peer hidden'
+								/>
+								<label
+									for='parent'
+									class='inline-block cursor-pointer rounded-full border border-brand-light-blue bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-primary transition-colors duration-150 ease-linear hover:border-brand-primary hover:bg-brand-light-blue hover:text-brand-primary peer-checked:border-white peer-checked:bg-brand-primary peer-checked:text-white'>
+									Parent or Guardian
+								</label>
+							</div>
+						</div>
+					</div>
+					<input
+						type='text'
+						name='name'
+						id='name'
+						placeholder='Name'
+						class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
+					/>
+					<input
+						type='email'
+						name='Email'
+						id='email'
+						placeholder='Email'
+						class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
+					/>
+				</div>
+				<div class='lg:w-1/2 lg:pt-8'>
+					<textarea
+						name='message'
+						id='message'
+						placeholder='Message'
+						class='block h-56 w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
+					></textarea>
+					<button
+						class='mt-6 inline-block rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:py-4'>
+						Send Message
+					</button>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>

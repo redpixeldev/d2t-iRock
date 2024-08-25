@@ -29,7 +29,7 @@
 
 		.splide__pagination__page {
 			border: 1px solid theme('colors.brand.primary');
-			@apply rounded-full bg-white p-1.5;
+			@apply rounded-full bg-white p-1.5 opacity-100;
 
 			&.is-active {
 				@apply scale-100 bg-brand-primary opacity-100;
@@ -44,10 +44,25 @@
 
 		.splide__pagination__page {
 			border: 1px solid theme('colors.brand.primary');
-			@apply rounded-full bg-white p-1;
+			@apply rounded-full bg-white p-1 opacity-100;
 
 			&.is-active {
 				@apply scale-100 bg-brand-primary opacity-100;
+			}
+		}
+	}
+}
+
+.info-slider {
+	.splide__pagination {
+		@apply relative bottom-auto flex items-center justify-center gap-1 pt-9;
+
+		.splide__pagination__page {
+			border: 1px solid theme('colors.white');
+			@apply rounded-full bg-transparent p-1.5 opacity-100;
+
+			&.is-active {
+				@apply scale-100 bg-white opacity-100;
 			}
 		}
 	}

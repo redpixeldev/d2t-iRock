@@ -3,6 +3,7 @@
 	{
 		isMobileMenuOpen: false,
 		toggleMobileMenu() {
+			document.documentElement.classList.toggle('overflow-hidden');
 			this.isMobileMenuOpen = !this.isMobileMenuOpen;
 		}
 	}
