@@ -1,4 +1,4 @@
-@import "fonts.css"; /* for custom fonts */
+@import 'fonts.css'; /* for custom fonts */
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
 	html {
-		@apply font-body antialiased text-brand-dark-blue;
+		@apply font-body text-brand-dark-blue antialiased;
 	}
 
 	[x-cloak] {
@@ -20,5 +20,20 @@
 	}
 
 	.btn-primary {
+	}
+}
+
+.testimonials-slider {
+	.splide__pagination {
+		@apply relative bottom-auto -ml-6 flex items-center justify-center gap-1 pt-9;
+
+		.splide__pagination__page {
+			border: 1px solid theme('colors.brand.primary');
+			@apply rounded-full bg-white p-1.5;
+
+			&.is-active {
+				@apply scale-100 bg-brand-primary opacity-100;
+			}
+		}
 	}
 }
