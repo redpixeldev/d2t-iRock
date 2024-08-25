@@ -1,88 +1,195 @@
-
-<div class="bg-brand-primary">
-	<div class="container py-7 2xl:px-28">
-		<div class="flex items-center justify-between gap-12">
-			<a href="/" class="shrink-0">
-				<img src="/img/logo-white.png" class="h-10 lg:h-14" alt="">
-			</a>
-			<div class="hidden lg:flex items-center gap-10 2xl:gap-12 pt-1 xl:pt-0">
-				<ul class="flex flex-wrap gap-y-2 gap-x-9 xl:gap-x-12 items-center">
-					<li class="group">
-						<a href="/about" class="text-white font-bold uppercase tracking-[0.10em] pt-1.5">
-							About Us
-							<span class="h-1 w-10 mx-auto bg-transparent group-hover:bg-brand-light-blue block rounded-full"></span>
+<div
+	x-data={`
+	{
+		isMobileMenuOpen: false,
+		toggleMobileMenu() {
+			this.isMobileMenuOpen = !this.isMobileMenuOpen;
+		}
+	}
+`}>
+	<div class='bg-brand-primary'>
+		<div class='container py-7 2xl:px-28'>
+			<div class='flex items-center justify-between gap-12'>
+				<a
+					href='/'
+					class='shrink-0'>
+					<img
+						src='/img/logo-white.png'
+						class='h-10 lg:h-14'
+						alt=''
+					/>
+				</a>
+				<div class='hidden items-center gap-10 pt-1 lg:flex xl:pt-0 2xl:gap-12'>
+					<ul class='flex flex-wrap items-center gap-x-9 gap-y-2 xl:gap-x-12'>
+						<li class='group'>
+							<a
+								href='/about'
+								class='pt-1.5 font-bold uppercase tracking-[0.10em] text-white'>
+								About Us
+								<span class='mx-auto block h-1 w-10 rounded-full bg-transparent group-hover:bg-brand-light-blue'></span>
+							</a>
+						</li>
+						<li class='group'>
+							<a
+								href='/'
+								class='pt-1.5 font-bold uppercase tracking-[0.10em] text-white'>
+								For SchoolS
+								<span class='mx-auto block h-1 w-10 rounded-full bg-transparent group-hover:bg-brand-light-blue'></span>
+							</a>
+						</li>
+						<li class='group'>
+							<a
+								href='/'
+								class='pt-1.5 font-bold uppercase tracking-[0.10em] text-white'>
+								For Parents
+								<span class='mx-auto block h-1 w-10 rounded-full bg-transparent group-hover:bg-brand-light-blue'></span>
+							</a>
+						</li>
+						<li class='group'>
+							<a
+								href='/'
+								class='pt-1.5 font-bold uppercase tracking-[0.10em] text-white'>
+								Work with us
+								<span class='mx-auto block h-1 w-10 rounded-full bg-transparent group-hover:bg-brand-light-blue'></span>
+							</a>
+						</li>
+					</ul>
+					<div class='flex shrink-0 gap-4'>
+						<a
+							href='/'
+							class='rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-brand-primary hover:bg-brand-dark-blue hover:text-white'>
+							iRocker Sign-in
 						</a>
-					</li>
-					<li class="group">
-						<a href="/" class="text-white font-bold uppercase tracking-[0.10em] pt-1.5">
-							For SchoolS
-							<span class="h-1 w-10 mx-auto bg-transparent group-hover:bg-brand-light-blue block rounded-full"></span>
+						<a
+							href='/'
+							class='rounded-full bg-brand-electric-pink px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue'>
+							Enrol Now
 						</a>
-					</li>
-					<li class="group">
-						<a href="/" class="text-white font-bold uppercase tracking-[0.10em] pt-1.5">
-							For Parents
-							<span class="h-1 w-10 mx-auto bg-transparent group-hover:bg-brand-light-blue block rounded-full"></span>
-						</a>
-					</li>
-					<li class="group">
-						<a href="/" class="text-white font-bold uppercase tracking-[0.10em] pt-1.5">
-							Work with us
-							<span class="h-1 w-10 mx-auto bg-transparent group-hover:bg-brand-light-blue block rounded-full"></span>
-						</a>
-					</li>
-				</ul>
-				<div class="flex shrink-0 gap-4">
-					<a href="/" class="bg-white hover:bg-brand-dark-blue rounded-full text-brand-primary hover:text-white font-bold text-sm tracking-[0.2em] px-6 py-3 uppercase">
-						iRocker Sign-in
-					</a>
-					<a href="/" class="bg-brand-electric-pink hover:bg-brand-dark-blue  rounded-full text-white font-bold text-sm tracking-[0.2em] px-6 py-3 uppercase">
-						Enrol Now
-					</a>
+					</div>
 				</div>
-			</div>
-			<div class="block lg:hidden">
-				<svg width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="3" rx="1.5" fill="#fff"/><rect y="8" width="24" height="3" rx="1.5" fill="#fff"/><rect y="16" width="24" height="3" rx="1.5" fill="#fff"/></svg>
+				<button
+					type='button'
+					@click='toggleMobileMenu'
+					class='block lg:hidden'>
+					<svg
+						width='24'
+						height='20'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+						><rect
+							width='24'
+							height='3'
+							rx='1.5'
+							fill='#fff'
+						></rect><rect
+							y='8'
+							width='24'
+							height='3'
+							rx='1.5'
+							fill='#fff'
+						></rect><rect
+							y='16'
+							width='24'
+							height='3'
+							rx='1.5'
+							fill='#fff'
+						></rect></svg
+					>
+				</button>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- MOBILE MENU -->
-<div class="hidden absolute top-0 inset-x-0 w-full h-screen bg-gradient-to-br from-white via-[#bdd4fe] to-[#bdd4fe]">
-	<div class="container">
-		<div class="flex justify-end pt-14">
-			<svg width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="3" rx="1.5" fill="#000"/><rect y="8" width="24" height="3" rx="1.5" fill="#000"/><rect y="16" width="24" height="3" rx="1.5" fill="#000"/></svg>
-		</div>
-		<ul class="flex flex-col justify-center gap-3 items-center pb-7 pt-16">
-			<li>
-				<a href="/" class="text-brand-dark-blue font-bold">
-					About Us
-					<span class="border-b-4 border-[#ffdd94] block rounded-full"></span>
+
+	<div
+		:class="{
+		'pointer-events-auto opacity-100': isMobileMenuOpen,
+		'pointer-events-none opacity-0': !isMobileMenuOpen,
+		}"
+		class='pointer-events-none absolute inset-x-0 top-0 z-50 h-screen w-full bg-gradient-to-br from-white via-[#bdd4fe] to-[#bdd4fe] opacity-0 transition-opacity duration-200'>
+		<div class='container'>
+			<button
+				type='button'
+				@click='toggleMobileMenu'
+				class='ml-auto flex justify-end pt-14'>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke-width='1.5'
+					stroke='currentColor'
+					class='size-10'>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						d='M6 18 18 6M6 6l12 12'
+					></path>
+				</svg>
+			</button>
+			<ul class='flex flex-col items-center justify-center gap-3 pb-7 pt-16'>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						Home
+						<span class='block rounded-full border-b-4 border-[#ffdd94]'></span>
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						About
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						School info
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						Parent info
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						Holiday Clubs
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						Careers
+					</a>
+				</li>
+				<li>
+					<a
+						href='/'
+						class='font-bold text-brand-dark-blue'>
+						Contact
+					</a>
+				</li>
+			</ul>
+			<div
+				class='inline-flex w-full shrink-0 flex-col items-center justify-center gap-4 border-t border-[#a5b7dc] pt-7'>
+				<a
+					href='/'
+					class='rounded-full bg-brand-primary px-6 py-3 text-sm font-bold text-white'>
+					My account
 				</a>
-			</li>
-			<li>
-				<a href="/" class="text-brand-dark-blue font-bold">
-					For Schools
+				<a
+					href='/'
+					class='rounded-full bg-[#fd434c] px-6 py-3 text-sm font-bold text-white'>
+					Log out
 				</a>
-			</li>
-			<li>
-				<a href="/" class="text-brand-dark-blue font-bold">
-					For Parents
-				</a>
-			</li>
-			<li>
-				<a href="/" class="text-brand-dark-blue font-bold">
-					Work with us
-				</a>
-			</li>
-		</ul>
-		<div class="w-full inline-flex flex-col justify-center items-center shrink-0 gap-4 border-t border-[#a5b7dc] pt-7">
-			<a href="/" class="bg-brand-primary rounded-full text-white font-bold text-sm tracking-[0.2em] px-6 py-3 uppercase">
-				My account
-			</a>
-			<a href="/" class="bg-[#fd434c] rounded-full text-white font-bold text-sm tracking-[0.2em] px-6 py-3 uppercase">
-				Log out
-			</a>
+			</div>
 		</div>
 	</div>
 </div>
