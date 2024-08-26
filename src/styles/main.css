@@ -67,3 +67,9 @@
 		}
 	}
 }
+
+.people-slider {
+	.splide__arrows {
+		@apply hidden;
+	}
+}

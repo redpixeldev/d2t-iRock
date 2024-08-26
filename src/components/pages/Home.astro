@@ -75,7 +75,7 @@
 	<div class='relative'>
 		<div
 			class='container relative z-10 px-0 pb-12 pt-40 sm:pt-48 md:pr-4 md:pt-52 lg:pb-52 lg:pt-56 2xl:px-28 2xl:pb-60 2xl:pt-72'>
-			<div class='lg:w-[48%] lg:bg-white lg:pr-12'>
+			<div class='pl-5 lg:w-[48%] lg:bg-white lg:pr-12'>
 				<img
 					src='/img/icon-thumbs-up.png'
 					class='h-16 md:h-20 xl:h-24'
@@ -471,7 +471,6 @@
 		</div>
 	</div>
 </div>
-
 <div class='relative'>
 	<img
 		src='/img/bg-coaches.png'
@@ -540,22 +539,74 @@
 				<h3 class='pb-12 text-center font-header text-4xl font-bold -tracking-[0.015px] text-white xl:text-5xl'>
 					Meet some of our band coaches
 				</h3>
-				<div class='mx-auto sm:w-3/5 md:w-1/2'>
-					<img
-						src='/img/coach-bertug.png'
-						class='mx-auto w-full rounded-3xl'
-						alt=''
-					/>
-					<div class='pt-5 text-center'>
-						<span class='block font-bold text-white lg:text-xl'>Bertug Saginc</span>
-						<span class='block font-medium text-white lg:text-xl'>Band Coach</span>
+				<div class="mx-auto sm:w-3/5 md:w-1/2 ">
+					<section
+					x-data={`
+						{
+							init() {
+								new Splide('.people-slider', {
+									type: 'slide',
+									perPage: 1,
+									perMove: 1,
+									gap: 24,
+									pagination: true,
+									arrows: true,
+									breakpoints: {
+									},
+								}).mount();
+							}
+						}
+					`}
+					class='people-slider splide pb-10'>
+					<div class='splide__track'>
+						<ul class='splide__list'>
+							<li class='splide__slide'>
+								<img
+									src='/img/coach-bertug.png'
+									class='mx-auto w-full rounded-3xl'
+									alt=''
+								/>
+								<div class='pt-5 text-center'>
+									<span class='block font-bold text-white'>Bertug Saginc</span>
+									<span class='block font-medium text-white'>Band Coach</span>
+								</div>
+							</li>
+							<li class='splide__slide'>
+								<img
+									src='/img/coach-nick.png'
+									class='rounded-3xl mx-auto w-full'
+									alt=''
+								/>
+								<div class='pt-5 text-center'>
+									<span class='block font-bold text-white'>Nick Clewlow</span>
+									<span class='block font-medium text-white'>Band Coach</span>
+								</div>
+							</li>
+							<li class='splide__slide'>
+								<img
+									src='/img/coach-hazel.png'
+									class='rounded-3xl mx-auto w-full'
+									alt=''
+								/>
+								<div class='pt-5 text-center'>
+									<span class='block font-bold text-white'>Hazel Lawrie</span>
+									<span class='block font-medium text-white'>Band Coach</span>
+								</div>
+							</li>
+							<li class='splide__slide'>
+								<img
+									src='/img/coach-onarres.png'
+									class='rounded-3xl mx-auto w-full'
+									alt=''
+								/>
+								<div class='pt-5 text-center'>
+									<span class='block font-bold text-white'>Onarres Serrano</span>
+									<span class='block font-medium text-white'>Band Coach</span>
+								</div>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class='flex items-center justify-center gap-1 pt-6'>
-					<span class='h-2.5 w-2.5 rounded-full border border-white bg-white'></span>
-					<span class='h-2.5 w-2.5 rounded-full border border-white'></span>
-					<span class='h-2.5 w-2.5 rounded-full border border-white'></span>
-					<span class='h-2.5 w-2.5 rounded-full border border-white'></span>
+				</section>
 				</div>
 			</div>
 			<div class='lg:w-1/2 xl:pt-8'>
