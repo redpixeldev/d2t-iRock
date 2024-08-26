@@ -109,9 +109,18 @@
 								1536: {
 									perPage: 2,
 								},
+								1023: {
+									padding: {
+										right: 40,
+										left: 50,
+									},
+									perPage: 2,
+									pagination: true,
+								},
 								480: {
 									padding: {
-										right: 60,
+										left: 40,
+										right: 30,
 									},
 									perPage: 1,
 									pagination: true,
@@ -124,7 +133,7 @@
 				class='splide testimonials-slider w-full'>
 				<div class='splide__track'>
 					<ul class='splide__list'>
-						<li class='splide__slide flex pl-10 sm:pl-0'>
+						<li class='splide__slide flex'>
 							<div
 								class='flex items-center rounded-3xl border-2 border-brand-primary bg-white px-5 py-7 text-center shadow-[0px_4px_5px_rgba(0,0,0,0.1)] xl:px-7 xl:py-10'>
 								<div>
@@ -303,14 +312,14 @@
 					a team, all whilst levelling up their musical ability and developing a love of music.
 				</p>
 				<ul
-					class='mx-auto flex flex-wrap justify-start gap-x-8 gap-y-2 sm:justify-center lg:gap-x-12 lg:gap-y-3 xl:justify-start 2xl:w-[90%]'>
+					class='mx-auto flex flex-wrap justify-start gap-x-8 gap-y-2 sm:justify-center lg:gap-x-12 lg:gap-y-3 xl:justify-start w-[90%] sm:w-full 2xl:w-[90%]'>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
 							src='/img/icon-checkmark.png'
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>No experience necessary</span>
+						<span class="block text-start">No experience necessary</span>
 					</li>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
@@ -318,7 +327,7 @@
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>Taught by expert Band Coaches</span>
+						<span class="block text-start">Taught by expert Band Coaches</span>
 					</li>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
@@ -326,7 +335,7 @@
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>All equipment and instruments provided</span>
+						<span class="block text-start">All equipment and instruments provided</span>
 					</li>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
@@ -334,7 +343,7 @@
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>From reception to year 6</span>
+						<span class="block text-start">From reception to year 6</span>
 					</li>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
@@ -342,7 +351,7 @@
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>Broad range of rock and pop songs</span>
+						<span class="block text-start">Broad range of rock and pop songs</span>
 					</li>
 					<li class='flex gap-3 font-medium lg:text-xl/[35px]'>
 						<img
@@ -350,7 +359,7 @@
 							class='h-7 lg:mt-1'
 							alt=''
 						/>
-						<span>Exam-free qualification</span>
+						<span class="block text-start">Exam-free qualification</span>
 					</li>
 				</ul>
 			</div>
@@ -383,10 +392,10 @@
 						<div class='relative'>
 							<img
 								src='/img/icon-arrow-blue.png'
-								class='absolute left-56 top-8 h-12 sm:h-14'
+								class='absolute left-52 sm:left-56 top-10 sm:top-8 h-10 sm:h-14'
 								alt=''
 							/>
-							<span class='block pb-5 text-xl font-bold'>What can iRock offer your child? </span>
+							<span class='block pb-5 sm:text-xl font-bold'>What can iRock offer your child? </span>
 							<a
 								href='/'
 								class='inline-block rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:py-4'>
@@ -413,13 +422,13 @@
 								experience, ability, or learning style.
 							</p>
 						</div>
-						<div class='relative'>
+						<div class='relative max-w-[340px] mx-auto md:mx-0'>
 							<img
 								src='/img/icon-arrow-blue.png'
 								class='absolute left-auto right-4 top-14 h-8 -rotate-[60deg] md:top-6 2xl:-left-10 2xl:h-10 2xl:rotate-[60deg] 2xl:-scale-x-[1]'
 								alt=''
 							/>
-							<span class='block pb-5 text-xl font-bold'>Bring iRock to your school </span>
+							<span class='block pb-5 sm:text-xl font-bold'>Bring iRock to your school </span>
 							<a
 								href='/'
 								class='inline-block rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:py-4'>
