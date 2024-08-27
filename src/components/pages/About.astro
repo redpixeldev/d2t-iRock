@@ -36,139 +36,143 @@
 			alt=''
 		/>
 		<div class='container relative z-10 pb-24 pr-0 pt-36 sm:pr-4 lg:pb-32 lg:pt-16 2xl:px-28 2xl:pb-40'>
-			<div class='pb-16 pr-4 lg:pb-24'>
-				<h3 class='pb-6 sm:pb-8 font-header text-4xl font-bold -tracking-[0.015px] md:pb-10 xl:text-5xl'>Our Story</h3>
-				<p class='pb-3 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'>
-					iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
-					power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
-					lessons boost confidence, encourage teamwork and give children the chance to perform skills they've learned in
-					for their teachers, guardians and peers.
-				</p>
-				<div>
-					<div
-						class='border-b-4 border-brand-primary/30'
-						x-data={`{ isOpen: false }`}>
-						<button
-							type='button'
-							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-							@click='isOpen = !isOpen'>
-							<div
-								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-								:class='{ "!text-brand-primary": isOpen }'>
-								Misunderstood and overlooked
-							</div>
-							<div
-								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-								<svg
-									class='mt-1 rotate-90'
-									width='14'
-									height='23'
-									viewBox='0 0 14 23'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'>
-									<path
-										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-										fill='white'
-									></path>
-								</svg>
-							</div>
-						</button>
-						<p
-							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-							x-show='isOpen'
-							x-cloak
-							x-collapse>
-							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
-							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
-							band lessons boost confidence.
-						</p>
-					</div>
-					<div
-						class='border-b-4 border-brand-primary/30'
-						x-data={`{ isOpen: false }`}>
-						<button
-							type='button'
-							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-							@click='isOpen = !isOpen'>
-							<div
-								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-								:class='{ "!text-brand-primary": isOpen }'>
-								Boosting confidence and changing perceptions
-							</div>
-							<div
-								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-								<svg
-									class='mt-1 rotate-90'
-									width='14'
-									height='23'
-									viewBox='0 0 14 23'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'>
-									<path
-										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-										fill='white'
-									></path>
-								</svg>
-							</div>
-						</button>
-						<p
-							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-							x-show='isOpen'
-							x-cloak
-							x-collapse>
-							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
-							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
-							band lessons boost confidence.
-						</p>
-					</div>
-					<div
-						class='border-b-4 border-brand-primary/30'
-						x-data={`{ isOpen: false }`}>
-						<button
-							type='button'
-							class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
-							@click='isOpen = !isOpen'>
-							<div
-								class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
-								:class='{ "!text-brand-primary": isOpen }'>
-								When business meets musical expression
-							</div>
-							<div
-								class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
-								:class='{ "!bg-brand-primary rotate-90": isOpen }'>
-								<svg
-									class='mt-1 rotate-90'
-									width='14'
-									height='23'
-									viewBox='0 0 14 23'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'>
-									<path
-										d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
-										fill='white'
-									></path>
-								</svg>
-							</div>
-						</button>
-						<p
-							class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
-							x-show='isOpen'
-							x-cloak
-							x-collapse>
-							iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
-							the power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop
-							band lessons boost confidence.
-						</p>
+			<div class='pr-4'>
+				<div class='pb-16 lg:pb-24'>
+					<h3 class='pb-6 font-header text-4xl font-bold -tracking-[0.015px] sm:pb-8 md:pb-10 xl:text-5xl'>
+						Our Story
+					</h3>
+					<p class='pb-3 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'>
+						iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in the
+						power of music to unleash creativity, potential and passion in every child. Our in-school rock and pop band
+						lessons boost confidence, encourage teamwork and give children the chance to perform skills they've learned
+						in for their teachers, guardians and peers.
+					</p>
+					<div>
+						<div
+							class='border-b-4 border-brand-primary/30'
+							x-data={`{ isOpen: false }`}>
+							<button
+								type='button'
+								class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+								@click='isOpen = !isOpen'>
+								<div
+									class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+									:class='{ "!text-brand-primary": isOpen }'>
+									Misunderstood and overlooked
+								</div>
+								<div
+									class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+									:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+									<svg
+										class='mt-1 rotate-90'
+										width='14'
+										height='23'
+										viewBox='0 0 14 23'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+											fill='white'
+										></path>
+									</svg>
+								</div>
+							</button>
+							<p
+								class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+								x-show='isOpen'
+								x-cloak
+								x-collapse>
+								iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+								the power of music to unleash creativity, potential and passion in every child. Our in-school rock and
+								pop band lessons boost confidence.
+							</p>
+						</div>
+						<div
+							class='border-b-4 border-brand-primary/30'
+							x-data={`{ isOpen: false }`}>
+							<button
+								type='button'
+								class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+								@click='isOpen = !isOpen'>
+								<div
+									class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+									:class='{ "!text-brand-primary": isOpen }'>
+									Boosting confidence and changing perceptions
+								</div>
+								<div
+									class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+									:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+									<svg
+										class='mt-1 rotate-90'
+										width='14'
+										height='23'
+										viewBox='0 0 14 23'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+											fill='white'
+										></path>
+									</svg>
+								</div>
+							</button>
+							<p
+								class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+								x-show='isOpen'
+								x-cloak
+								x-collapse>
+								iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+								the power of music to unleash creativity, potential and passion in every child. Our in-school rock and
+								pop band lessons boost confidence.
+							</p>
+						</div>
+						<div
+							class='border-b-4 border-brand-primary/30'
+							x-data={`{ isOpen: false }`}>
+							<button
+								type='button'
+								class='flex w-full justify-between gap-4 py-6 text-left lg:py-8'
+								@click='isOpen = !isOpen'>
+								<div
+									class='flex-1 font-header text-3xl font-bold text-brand-primary/30 transition-colors duration-300 xl:text-4xl'
+									:class='{ "!text-brand-primary": isOpen }'>
+									When business meets musical expression
+								</div>
+								<div
+									class='flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-primary/30 transition-all duration-300'
+									:class='{ "!bg-brand-primary rotate-90": isOpen }'>
+									<svg
+										class='mt-1 rotate-90'
+										width='14'
+										height='23'
+										viewBox='0 0 14 23'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M8.625 11.25L0 2.625L2.625 0L13.875 11.25L2.625 22.5L0 19.875L8.625 11.25Z'
+											fill='white'
+										></path>
+									</svg>
+								</div>
+							</button>
+							<p
+								class='pb-7 font-medium lg:text-lg/[30px] xl:text-xl/[35px]'
+								x-show='isOpen'
+								x-cloak
+								x-collapse>
+								iRock School of Music was founded in 2016 by father and son team, John and Josh Franklin. We believe in
+								the power of music to unleash creativity, potential and passion in every child. Our in-school rock and
+								pop band lessons boost confidence.
+							</p>
+						</div>
 					</div>
 				</div>
+				<img
+					src='/img/our-story-image.png'
+					class='w-full rounded-3xl'
+					alt=''
+				/>
 			</div>
-			<img
-				src='/img/our-story-image.png'
-				class='w-full rounded-3xl'
-				alt=''
-			/>
 			<div class='relative'>
 				<div class='pt-36 sm:pt-44 md:pt-16 lg:pt-24 2xl:pt-32'>
 					<div class='pr-4 text-center'>
@@ -182,7 +186,7 @@
 						</p>
 					</div>
 					<div
-						class='relative mb-10 flex items-center gap-6 overflow-auto pl-20 pr-10 sm:pr-0 pt-8 sm:ml-0 sm:pl-0 sm:justify-center lg:pb-14'>
+						class='relative mb-10 flex items-center gap-6 overflow-auto pl-20 pr-10 pt-8 sm:ml-0 sm:justify-center sm:pl-0 sm:pr-0 lg:pb-14'>
 						<div
 							class='shrink-0 rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
 							Enrol Now
@@ -383,8 +387,8 @@
 		</div>
 	</div>
 	<div class='bg-white'>
-		<div class='container pb-16 pr-0 pt-12 md:pb-24 md:pt-16 lg:pb-20 lg:pr-4 lg:pt-20 xl:pt-28 2xl:px-28 2xl:pt-32'>
-			<div class='mr-4 flex flex-col gap-7 pb-10 md:flex-row md:gap-10 md:pb-12 lg:gap-14 xl:gap-24 xl:pb-16'>
+		<div class='container px-0 pb-16 pt-12 md:pb-24 md:pt-16 lg:pb-20 lg:pr-4 lg:pt-20 xl:pt-28 2xl:px-28 2xl:pt-32'>
+			<div class='mx-4 flex flex-col gap-7 pb-10 md:flex-row md:gap-10 md:pb-12 lg:gap-14 xl:gap-24 xl:pb-16'>
 				<div class='md:w-[45%]'>
 					<h3 class='font-header text-3xl font-bold xl:text-4xl'>
 						In-school band lessons that are fun, creative and affordable
@@ -399,11 +403,10 @@
 					</p>
 				</div>
 			</div>
-			<!-- slider mobile -->
-			<div class='relative mr-4 overflow-auto lg:mr-0'>
+			<div class='relative overflow-auto lg:mr-0'>
 				<div class='flex gap-3 sm:gap-4 xl:gap-6'>
 					<div
-						class='w-3/4 shrink-0 rounded-3xl border-2 border-[#19d78c] px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
+						class='ml-4 w-3/4 shrink-0 rounded-3xl border-2 border-[#19d78c] px-4 pb-14 pt-9 text-center sm:w-[45%] md:w-1/3 lg:w-1/4 lg:flex-shrink xl:px-8'>
 						<img
 							src='/img/icon-face.png'
 							class='mx-auto h-16 xl:h-20'

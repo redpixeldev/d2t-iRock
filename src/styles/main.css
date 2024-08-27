@@ -53,7 +53,8 @@
 	}
 }
 
-.info-slider {
+.info-slider,
+.people-slider {
 	.splide__pagination {
 		@apply relative bottom-auto flex items-center justify-center gap-1 pt-9;
 
