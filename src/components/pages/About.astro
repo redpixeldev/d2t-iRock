@@ -18,7 +18,7 @@
 					alt=''
 				/>
 				<span
-					class='relative z-10 flex h-full items-end pb-5 pl-2 font-header text-5xl font-bold text-brand-primary sm:pb-8 md:pb-10 md:pl-10 lg:items-center lg:justify-center desk:pb-12 lg:pb-20 lg:pl-0 xl:text-6xl 2xl:text-7xl'
+					class='desk:pb-12 relative z-10 flex h-full items-end pb-5 pl-2 font-header text-5xl font-bold text-brand-primary sm:pb-8 md:pb-10 md:pl-10 lg:items-center lg:justify-center lg:pb-20 lg:pl-0 xl:text-6xl 2xl:text-7xl'
 					>About us</span
 				>
 			</div>
@@ -35,7 +35,7 @@
 			class='absolute inset-x-0 bottom-0 block h-[1020px] w-full object-cover object-top sm:h-[1070px] md:hidden'
 			alt=''
 		/>
-		<div class='container relative z-10 pb-24 pr-0 pt-36 sm:pr-4 lg:pb-32 lg:pt-16 2xl:px-28 2xl:pb-40'>
+		<div class='container relative z-10 px-0 pb-24 pt-36 sm:pr-4 lg:pb-32 lg:pt-16 2xl:px-28 2xl:pb-40'>
 			<div class='pr-4'>
 				<div class='pb-16 lg:pb-24'>
 					<h3 class='pb-6 font-header text-4xl font-bold -tracking-[0.015px] sm:pb-8 md:pb-10 xl:text-5xl'>
@@ -174,8 +174,17 @@
 				/>
 			</div>
 			<div class='relative'>
-				<div class='pt-36 sm:pt-44 md:pt-16 lg:pt-24 2xl:pt-32'>
-					<div class='pr-4 text-center'>
+				<div
+					class='pt-36 sm:pt-44 md:pt-16 lg:pt-24 2xl:pt-32'
+					x-data={`
+					{
+						activeTab: 'service-1',
+						setActiveTab(tab) {
+							this.activeTab = tab;
+						}
+					}
+				`}>
+					<div class='px-4 text-center'>
 						<h3 class='pb-8 font-header text-4xl font-bold -tracking-[0.015px] text-brand-primary xl:text-5xl'>
 							The iRock difference
 						</h3>
@@ -187,20 +196,31 @@
 					</div>
 					<div
 						class='relative mb-10 flex items-center gap-6 overflow-auto pl-20 pr-10 pt-8 sm:ml-0 sm:justify-center sm:pl-0 sm:pr-0 lg:pb-14'>
-						<div
-							class='shrink-0 rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+						<button
+							type='button'
+							@click='setActiveTab("service-1")'
+							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'
+							:class='{ "!bg-brand-primary !text-white": activeTab === "service-1" }'>
 							Enrol Now
-						</div>
-						<div
-							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+						</button>
+						<button
+							type='button'
+							@click='setActiveTab("service-2")'
+							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'
+							:class='{ "!bg-brand-primary !text-white": activeTab === "service-2" }'>
 							Our Coaches
-						</div>
-						<div
-							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'>
+						</button>
+						<button
+							type='button'
+							@click='setActiveTab("service-3")'
+							class='shrink-0 rounded-full border border-brand-primary/30 bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#7fb9f5] sm:flex-shrink md:text-sm lg:px-10 lg:py-4'
+							:class='{ "!bg-brand-primary !text-white": activeTab === "service-3" }'>
 							Our Lessons
-						</div>
+						</button>
 					</div>
-					<div class='flex flex-col items-center gap-6 pr-4 md:flex-row xl:gap-10'>
+					<div
+						class='flex flex-col items-center gap-6 px-4 md:flex-row xl:gap-10'
+						x-show='activeTab === "service-1"'>
 						<img
 							src='/img/our-service-image.png'
 							class='md:w-1/2'
@@ -211,6 +231,39 @@
 							<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
 								Once established in a primary school, parents pay a monthly subscription service that includes at least
 								33 sessions per academic year, including three show-stopping performances at the end-of-term.
+							</p>
+						</div>
+					</div>
+					<div
+						class='flex flex-col items-center gap-6 px-4 md:flex-row xl:gap-10'
+						x-show='activeTab === "service-2"'>
+						<img
+							src='/img/our-service-image.png'
+							class='md:w-1/2'
+							alt=''
+						/>
+						<div class='md:w-1/2'>
+							<h4 class='pb-5 font-header text-3xl font-bold xl:text-4xl'>Our service</h4>
+							<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
+								Irure pariatur do occaecat amet. Est tempor do incididunt cillum id mollit veniam culpa est mollit
+								adipisicing cupidatat ut. Sit deserunt excepteur laboris incididunt ut aliquip id tempor enim cupidatat
+								deserunt sunt ut.
+							</p>
+						</div>
+					</div>
+					<div
+						class='flex flex-col items-center gap-6 px-4 md:flex-row xl:gap-10'
+						x-show='activeTab === "service-3"'>
+						<img
+							src='/img/our-service-image.png'
+							class='md:w-1/2'
+							alt=''
+						/>
+						<div class='md:w-1/2'>
+							<h4 class='pb-5 font-header text-3xl font-bold xl:text-4xl'>Our service</h4>
+							<p class='font-medium lg:text-lg xl:text-xl/[35px]'>
+								Culpa non tempor ut irure nisi velit reprehenderit Lorem ad labore do fugiat sit officia mollit. Anim et
+								incididunt qui non ad aliqua nostrud minim sint elit pariatur reprehenderit.
 							</p>
 						</div>
 					</div>
