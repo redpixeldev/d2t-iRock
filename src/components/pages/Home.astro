@@ -2,13 +2,13 @@
 
 ---
 
-<div class='relative overflow-hidden bg-cover bg-center bg-no-repeat w-full object-[10%_50%] sm:object-[50%_100%] h-[600px] lg:h-[800px] flex items-end' style="background-image: url(/img/home-hero-image.png);">
-
+<div
+	class='relative flex h-[600px] w-full items-end overflow-hidden bg-cover bg-center bg-no-repeat object-[10%_50%] sm:object-[50%_100%] lg:h-[800px]'
+	style='background-image: url(/img/home-hero-image.png);'>
 	<div
 		class='absolute left-1/2 top-[100px] mx-auto h-full w-[800px] -translate-x-1/2 bg-[radial-gradient(46.29%_46.29%_at_50.03%_49.27%,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_100%)] sm:top-[75px] sm:w-[900px] md:w-full xl:top-[250px] xl:w-5/6 2xl:top-[300px] 2xl:w-3/4'>
 	</div>
-	<div
-		class='container relative z-20 pb-28  md:pb-32 lg:pb-36 xl:pb-28'>
+	<div class='container relative z-20 pb-28 md:pb-32 lg:pb-36 xl:pb-28'>
 		<div class='mx-auto text-center sm:w-2/3 2xl:w-1/2'>
 			<h1 class='font-header text-4xl font-bold text-white lg:text-5xl xl:text-6xl 2xl:text-7xl'>
 				Welcome to iRock school of music
@@ -29,7 +29,7 @@
 <div class='relative'>
 	<img
 		src='/img/bg-book-assembly.png'
-		class='absolute inset-x-0 hidden h-[780px] w-full object-cover [@media(min-width:1921px)]:object-fill object-[50%_0%] sm:-top-56 sm:block md:-top-72 md:h-[910px] lg:h-[950px] xl:-top-[16.7rem] 2xl:-top-64 [@media(min-width:2050px)]:-top-[280px] [@media(min-width:2200px)]:-top-[300px] 2xl:h-[1000px] [@media(min-width:1921px)]:h-auto [@media(min-width:2200px)]:h-[1100px] [@media(min-width:2700px)]:h-[1100px]'
+		class='absolute inset-x-0 hidden h-[780px] w-full object-cover object-[50%_0%] sm:-top-56 sm:block md:-top-72 md:h-[910px] lg:h-[950px] xl:-top-[16.7rem] 2xl:-top-64 2xl:h-[1000px] [@media(min-width:1921px)]:h-auto [@media(min-width:1921px)]:object-fill [@media(min-width:2050px)]:-top-[280px] [@media(min-width:2200px)]:-top-[300px] [@media(min-width:2200px)]:h-[1100px] [@media(min-width:2700px)]:h-[1100px]'
 		alt=''
 	/>
 	<img
@@ -272,7 +272,7 @@
 	</div>
 	<div class='relative'>
 		<div
-			class='absolute inset-x-0 -top-14 hidden h-[1850px] w-full object-cover lg:block lg:h-[1650px] lg:object-fill [@media(min-width:1921px)]:object-cover 2xl:h-[1760px]'>
+			class='absolute inset-x-0 -top-14 hidden h-[1850px] w-full object-cover lg:block lg:h-[1650px] lg:object-fill 2xl:h-[1760px] [@media(min-width:1921px)]:object-cover'>
 			<img
 				src='/img/bg-unleash-potential.png'
 				class='h-full w-full'
@@ -288,7 +288,7 @@
 			/>
 		</div>
 		<div
-			class='absolute inset-x-0 top-[2050px] z-10 w-full object-fill sm:top-[1920px] md:top-[2110px] lg:top-[1450px] 2xl:top-[1450px] [@media(min-width:1921px)]:object-cover object-[50%_0%] [@media(min-width:1921px)]:top-[1300px]'>
+			class='absolute inset-x-0 top-[2050px] z-10 w-full object-fill object-[50%_0%] sm:top-[1920px] md:top-[2110px] lg:top-[1450px] 2xl:top-[1450px] [@media(min-width:1921px)]:top-[1300px] [@media(min-width:1921px)]:object-cover'>
 			<img
 				src='/img/bg-learning-white.png'
 				class='h-full w-full'
@@ -746,10 +746,19 @@
 					placeholder='Name'
 					class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
 				/>
-				<div class="relative">
-					<input type="text" id="name" class="rounded-[20px] block px-5 py-4 w-full sm:text-xl border-1 border border-brand-light-blue font-medium appearance-none peer" placeholder=" " />
-					<label for="name" class="absolute px-5 py-4 text-xl text-brand-primary duration-300 transform top-4 z-10 font-medium peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:text-sm">Name</label>
-			</div>
+				<div class='relative'>
+					<input
+						type='text'
+						id='name'
+						class='border-1 peer block w-full appearance-none rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium sm:text-xl'
+						placeholder=' '
+					/>
+					<label
+						for='name'
+						class='absolute top-1 z-10 origin-[0] -translate-y-4 transform px-5 py-4 text-sm font-medium text-brand-primary duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-xl peer-focus:top-1 peer-focus:-translate-y-4 peer-focus:text-sm'
+						>Name</label
+					>
+				</div>
 				<input
 					type='email'
 					name='Email'
