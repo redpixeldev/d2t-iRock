@@ -739,13 +739,6 @@
 						</div>
 					</div>
 				</div>
-				<input
-					type='text'
-					name='name'
-					id='name'
-					placeholder='Name'
-					class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				/>
 				<div class='relative'>
 					<input
 						type='text'
@@ -755,25 +748,38 @@
 					/>
 					<label
 						for='name'
-						class='absolute top-1 z-10 origin-[0] -translate-y-4 transform px-5 py-4 text-sm font-medium text-brand-primary duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-xl peer-focus:top-1 peer-focus:-translate-y-4 peer-focus:text-sm'
+						class='absolute top-1.5 z-10 origin-[0] -translate-y-4 transform px-5 py-4 text-sm font-medium text-brand-primary duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-xl peer-focus:top-1.5 peer-focus:-translate-y-4 peer-focus:text-sm'
 						>Name</label
 					>
 				</div>
-				<input
-					type='email'
-					name='Email'
-					id='email'
-					placeholder='Email'
-					class='w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				/>
+				<div class='relative'>
+					<input
+						type='email'
+						id='email'
+						class='border-1 peer block w-full appearance-none rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium sm:text-xl'
+						placeholder=' '
+					/>
+					<label
+						for='email'
+						class='absolute top-1.5 z-10 origin-[0] -translate-y-4 transform px-5 py-4 text-sm font-medium text-brand-primary duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-xl peer-focus:top-1.5 peer-focus:-translate-y-4 peer-focus:text-sm'
+						>Email</label
+					>
+				</div>
 			</div>
-			<div class='lg:w-1/2 lg:pt-8'>
-				<textarea
-					name='message'
-					id='message'
-					placeholder='Message'
-					class='block h-56 w-full rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium placeholder-brand-primary sm:text-xl'
-				></textarea>
+			<div class='lg:w-1/2 lg:mt-8'>
+				<div class='relative block'>
+					<textarea
+						name='message'
+						id='message'
+						class='border-1 peer block h-56 w-full appearance-none rounded-[20px] border border-brand-light-blue px-5 py-4 font-medium sm:text-xl'
+						placeholder=' '
+					/></textarea>
+					<label
+						for='message'
+						class='absolute top-1.5 z-10 origin-[0] -translate-y-4 transform px-5 py-4 text-sm font-medium text-brand-primary duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-xl peer-focus:top-1.5 peer-focus:-translate-y-4 peer-focus:text-sm'
+						>Message
+					</label>
+				</div>
 				<button
 					class='mt-6 inline-block rounded-full bg-brand-primary px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white hover:bg-brand-dark-blue md:text-sm lg:py-4'>
 					Send Message
